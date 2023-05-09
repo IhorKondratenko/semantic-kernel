@@ -75,6 +75,7 @@ export class SemanticKernel {
         }
 
         try {
+            debugger;
             const response = await fetch(`${this.serviceUrl}${commandPath}`, {
                 method: method ?? 'GET',
                 headers,

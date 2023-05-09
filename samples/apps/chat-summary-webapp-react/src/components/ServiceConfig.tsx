@@ -28,6 +28,7 @@ const ServiceConfig: FC<IData> = ({ uri, onConfigComplete }) => {
 
     const saveKey = async () => {
         setIsBusy(true);
+        debugger;
 
         //POST a simple ask to validate the key
         const ask = { value: 'clippy', inputs: [{ key: 'style', value: 'Bill & Ted' }] };
